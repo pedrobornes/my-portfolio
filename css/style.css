@@ -428,6 +428,10 @@ main#top {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    
+    /* CAMBIO: Convertimos la tarjeta en flex vertical para poder empujar los botones */
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card h3 {
@@ -466,7 +470,10 @@ main#top {
 }
 
 .project-links {
-    margin-top: 1.5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .btn-project-link {
