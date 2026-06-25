@@ -229,7 +229,7 @@
                 </p>
                 
                 <details class="accordion-category">
-                    <summary>Comunicación</summary>
+                    <summary>Comunicación <span class="cert-hours">4 horas</span></summary>
                     <div class="accordion-content">
                         <div class="sub-module">
                             <span>Habilidades comunicativas en el ámbito laboral</span>
@@ -243,7 +243,7 @@
                 </details>
 
                 <details class="accordion-category">
-                    <summary>Feedback de Calidad</summary>
+                    <summary>Feedback de Calidad <span class="cert-hours">9 horas</span></summary>
                     <div class="accordion-content">
                         <div class="sub-module">
                             <span>Crítica constructiva vs Feedback</span>
@@ -261,7 +261,7 @@
                 </details>
 
                 <details class="accordion-category">
-                    <summary>Gestión y Trabajo en Equipo</summary>
+                    <summary>Gestión y Trabajo en Equipo <span class="cert-hours">3 horas</span></summary>
                     <div class="accordion-content">
                         <div class="sub-module">
                             <span>Optimización y gestión de equipos de alto rendimiento</span>
@@ -279,7 +279,7 @@
                 </details>
 
                 <details class="accordion-category">
-                    <summary>Productividad y Psicología</summary>
+                    <summary>Productividad y Psicología <span class="cert-hours">6 horas</span></summary>
                     <div class="accordion-content">
                         <div class="sub-module">
                             <span>Neurociencia aplicada a la productividad</span>
@@ -308,39 +308,39 @@
                 </p>
                 
                 <details class="accordion-category">
-                    <summary>IA para Desarrolladores</summary>
+                    <summary>IA para Desarrolladores <span class="cert-hours">En progreso...</span></summary>
                     <div class="accordion-content">
                         
                         <div class="sub-module">
                             <span>Fundamentos de Inteligencia Artificial para Ingeniería de Software</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/fundamentos_ia.png')">👁️ Ver</button>
                         </div>
-
+            
                         <div class="sub-module">
                             <span>Optimización del Flujo de Trabajo y Asistentes de Código</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/asistentes_codigo.png')">👁️ Ver</button>
                         </div>
-
+            
                         <div class="sub-module">
                             <span>Prompt Engineering Avanzado para Desarrolladores</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/prompt_engineering.png')">👁️ Ver</button>
                         </div>
-
+            
                         <div class="sub-module">
                             <span>Integración Eficaz de APIs en Ecosistemas de IA Generativa</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/integracion_apis_ia.png')">👁️ Ver</button>
                         </div>
-
+            
                         <div class="sub-module">
                             <span>Arquitectura y Desarrollo de Agentes de IA Generativa</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/agentes_ia.png')">👁️ Ver</button>
                         </div>
-
+            
                         <div class="sub-module">
                             <span>Desarrollo de Aplicaciones Full Stack con IA Integrada</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/fullstack_ia.png')">👁️ Ver</button>
                         </div>
-
+            
                     </div>
                 </details>
             </div>
@@ -369,6 +369,10 @@
     
     <a href="#top" class="back-to-top" aria-label="Volver arriba">↑</a>
 
+    <div id="certModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 1000;" onclick="closeModal()">
+        <img id="imgModal" src="" alt="Certificado" style="max-width: 90%; max-height: 85%; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+    </div>
+
     <script>
         const backToTopButton = document.querySelector('.back-to-top');
         const navbar = document.querySelector('.navbar');
@@ -394,6 +398,8 @@
         });
 
         function openModal(imgSrc) {
+            // Evita que el click en la imagen cierre el modal accidentalmente
+            event.stopPropagation();
             document.getElementById("imgModal").src = imgSrc;
             document.getElementById("certModal").style.display = "flex";
             document.body.style.overflow = "hidden"; 

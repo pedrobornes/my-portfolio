@@ -678,6 +678,18 @@ main#top {
     border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
+.cert-hours {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    opacity: 0.85;
+    background-color: rgba(16, 185, 129, 0.08);
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    transition: all 0.3s ease;
+}
+
 /* --- Bloque Acordeón Soft Skills --- */
 .certificates-group {
     margin-top: 3rem;
@@ -738,6 +750,9 @@ main#top {
 }
 
 .accordion-category summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1.25rem;
     font-size: 1.25rem;
     font-weight: 600;
@@ -746,6 +761,12 @@ main#top {
     user-select: none;
     outline: none;
     border-radius: 0.5rem;
+    padding-right: 2rem;
+}
+
+.accordion-category summary:hover .cert-hours {
+    opacity: 1;
+    background-color: rgba(16, 185, 129, 0.15);
 }
 
 .accordion-category[open] summary {
