@@ -219,10 +219,10 @@
                 <p>Formación continua y acreditaciones oficiales de especialización técnica.</p>
             </div>
 
-            <div class="soft-skills-accordion">
+            <div class="certificates-group">
                 <h3 class="accordion-main-title">Soft Skills</h3>
                 
-                <p class="soft-skills-intro">
+                <p class="certificates-intro">
                     Escribir código limpio y funcional es clave, pero solucionar problemas complejos 
                     también exige empatía con el equipo, saber dar y recibir feedback, 
                     y gestionar bien el tiempo para avanzar con paso firme.
@@ -297,23 +297,56 @@
                 </details>
             </div>
 
-            <div class="certificates-grid" style="margin-top: 3rem;">
-                <div class="cert-card" onclick="openModal('img/cert_ia_dev.png')">
-                    <div class="cert-icon" style="font-family: monospace; font-weight: bold; color: #10b981;">&gt;_</div>
-                    <div class="cert-info">
-                        <h4>IA para Desarrolladores</h4>
-                        <p>OpenWebinars &bull; 2026</p>
-                        <span class="cert-tag">Especialización</span>
+            <div class="certificates-group" style="margin-top: 3rem;">
+                <h3 class="accordion-main-title">
+                    <span style="color: #10b981; font-family: monospace; margin-right: 0.5rem;">&gt;_</span>Inteligencia Artificial
+                </h3>
+                
+                <p class="certificates-intro">
+                    Especialización en la integración de modelos de lenguaje, desarrollo de agentes 
+                    y optimización de flujos de trabajo de ingeniería de software utilizando herramientas avanzadas de IA.
+                </p>
+                
+                <details class="accordion-category">
+                    <summary>IA para Desarrolladores</summary>
+                    <div class="accordion-content">
+                        
+                        <div class="sub-module">
+                            <span>Fundamentos de Inteligencia Artificial para Ingeniería de Software</span>
+                            <button class="btn-view-cert" onclick="openModal('img/certificados/ia/fundamentos_ia.png')">👁️ Ver</button>
+                        </div>
+
+                        <div class="sub-module">
+                            <span>Optimización del Flujo de Trabajo y Asistentes de Código</span>
+                            <button class="btn-view-cert" onclick="openModal('img/certificados/ia/asistentes_codigo.png')">👁️ Ver</button>
+                        </div>
+
+                        <div class="sub-module">
+                            <span>Prompt Engineering Avanzado para Desarrolladores</span>
+                            <button class="btn-view-cert" onclick="openModal('img/certificados/ia/prompt_engineering.png')">👁️ Ver</button>
+                        </div>
+
+                        <div class="sub-module">
+                            <span>Integración Eficaz de APIs en Ecosistemas de IA Generativa</span>
+                            <button class="btn-view-cert" onclick="openModal('img/certificados/ia/integracion_apis_ia.png')">👁️ Ver</button>
+                        </div>
+
+                        <div class="sub-module">
+                            <span>Arquitectura y Desarrollo de Agentes de IA Generativa</span>
+                            <button class="btn-view-cert" onclick="openModal('img/certificados/ia/agentes_ia.png')">👁️ Ver</button>
+                        </div>
+
+                        <div class="sub-module">
+                            <span>Desarrollo de Aplicaciones Full Stack con IA Integrada</span>
+                            <button class="btn-view-cert" onclick="openModal('img/certificados/ia/fullstack_ia.png')">👁️ Ver</button>
+                        </div>
+
                     </div>
-                </div>
+                </details>
             </div>
+
         </div>
     </section>
-
-    <div id="certModal" class="modal" onclick="closeModal()">
-        <span class="close-modal" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="imgModal" alt="Certificado ampliado">
-    </div>
 
     <section id="contact" class="section-dark contact-section">
         <h2 class="contact-title">Contacto</h2>
