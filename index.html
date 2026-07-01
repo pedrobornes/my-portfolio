@@ -67,7 +67,7 @@
         </section>
     </main>
 
-    <section id="experience" class="section-dark">
+    <section id="experience" class="section-dark reveal-section">
         <div class="container">
             <div class="section-title">
                 <h2>Experiencia</h2>
@@ -109,7 +109,7 @@
         </div>
     </section>
 
-    <section id="projects" class="section-light">
+    <section id="projects" class="section-light reveal-section">
         <div class="container">
             <div class="section-title-center">
                 <h2>Proyectos</h2>
@@ -147,7 +147,7 @@
                     <p>Aplicación web Full Stack interactiva desarrollada para el ciclo formativo de DAW. Implementa un sistema de búsqueda y filtrado de películas en tiempo real mediante el <strong>consumo de APIs REST externas</strong> y un panel de administración sólido desarrollado con <strong>Laravel (PHP)</strong> y <strong>Angular</strong> sobre bases de datos <strong>MySQL</strong> y almacenamiento indexado con <strong>Elasticsearch</strong>.</p>
                     
                     <p class="project-team-note"><strong>Desarrollo individual</strong> para el ciclo formativo de DAW.</p>
-                
+                 Leyes de CSS
                     <div class="project-tech-tags">
                         <span class="tech-tag">Angular</span>
                         <span class="tech-tag">Laravel</span>
@@ -166,7 +166,7 @@
         </div>
     </section>
 
-    <section id="tech" class="section-dark">
+    <section id="tech" class="section-dark reveal-section">
         <div class="container">
             <div class="section-title-center">
                 <h2>Tech Stack</h2>
@@ -234,7 +234,7 @@
         </div>
     </section>
 
-    <section id="certificates" class="section-light">
+    <section id="certificates" class="section-light reveal-section">
         <div class="container">
             <div class="section-title-center">
                 <h2>Certificaciones</h2>
@@ -338,7 +338,6 @@
                 <details class="accordion-category">
                     <summary>IA para Desarrolladores <span class="cert-hours">En progreso...</span></summary>
                     <div class="accordion-content">
-                        
                         <div class="sub-module">
                             <span>Fundamentos de Inteligencia Artificial para Ingeniería de Software</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/fundamentos_ia.png')">👁️ Ver</button>
@@ -368,15 +367,13 @@
                             <span>Desarrollo de Aplicaciones Full Stack con IA Integrada</span>
                             <button class="btn-view-cert" onclick="openModal('img/certificados/ia/fullstack_ia.png')">👁️ Ver</button>
                         </div>
-            
                     </div>
                 </details>
             </div>
-
         </div>
     </section>
 
-    <section id="contact" class="section-dark contact-section">
+    <section id="contact" class="section-dark contact-section reveal-section">
         <h2 class="contact-title">Contacto</h2>
         <p>¿Quieres contactar conmigo o hablar de una oportunidad?</p>
         
@@ -407,26 +404,28 @@
         let lastScrollY = window.scrollY;
 
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
 
+        if (window.innerWidth < 768) {
             const currentScrollY = window.scrollY;
             
             if (currentScrollY > lastScrollY && currentScrollY > 80) {
                 navbar.classList.add('navbar-hidden');
-            } 
-            else if (currentScrollY < lastScrollY) {
+            } else if (currentScrollY < lastScrollY) {
                 navbar.classList.remove('navbar-hidden');
             }
 
             lastScrollY = currentScrollY;
-        });
+        } else {
+            navbar.classList.remove('navbar-hidden');
+        }
+    });
 
         function openModal(imgSrc) {
-            // Evita que el click en la imagen cierre el modal accidentalmente
             event.stopPropagation();
             document.getElementById("imgModal").src = imgSrc;
             document.getElementById("certModal").style.display = "flex";
@@ -437,6 +436,27 @@
             document.getElementById("certModal").style.display = "none";
             document.body.style.overflow = "auto"; 
         }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll('.reveal-section');
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
     </script>
 </body>
 </html>

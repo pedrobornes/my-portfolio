@@ -40,34 +40,46 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 /* ==========================================================================
    3. BARRA DE NAVEGACIÓN (HEADER)
    ========================================================================== */
-.navbar {
+   .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 1.5rem;          
+    left: 50%;
+    transform: translateX(-50%); 
+    
+    width: 90%;           
+    max-width: 550px;     
     z-index: 1000;
-    background-color: rgba(15, 23, 42, 0.7); 
+    
+    background-color: rgba(15, 23, 42, 0.75); 
     backdrop-filter: blur(12px);
-    padding: 1rem 0;
-    padding-top: max(1rem, env(safe-area-inset-top, 1rem));
-    border-bottom: 1px solid rgba(30, 41, 59, 0.8);
-    transition: transform 0.3s ease-in-out;
+    -webkit-backdrop-filter: blur(12px); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.85rem 1.5rem;
+    border: 1px solid rgba(51, 65, 85, 0.5); 
+    border-radius: 100px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); 
+    
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .navbar-hidden {
-    transform: translateY(-100%);
+    top: -80px;
+    opacity: 0;
 }
 
 .navbar nav {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    font-size: 0.875rem;
-    font-weight: 500;
+    align-items: center;
+    gap: clamp(0.75rem, 3vw, 2rem);
+    width: 100%;
 }
 
 .navbar nav a {
@@ -428,8 +440,6 @@ main#top {
     border-radius: 8px;
     padding: 1.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    
-    /* CAMBIO: Convertimos la tarjeta en flex vertical para poder empujar los botones */
     display: flex;
     flex-direction: column;
 }
@@ -1025,6 +1035,19 @@ main#top {
         box-sizing: border-box;
     }
 }
+
+/* --- ANIMACIÓN SCROLL REVEAL --- */
+.reveal-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.85s cubic-bezier(0.25, 1, 0.5, 1), transform 0.85s cubic-bezier(0.25, 1, 0.5, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 /* --- Dispositivos grandes (Escritorio / Pantallas desde 768px) --- */
 @media (min-width: 768px) {
