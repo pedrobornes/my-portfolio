@@ -1,4 +1,4 @@
-const IMG_BASE = '/img'
+const IMG_BASE = `${import.meta.env.BASE_URL}img`
 
 export const IMAGES = {
   profile: `${IMG_BASE}/foto_curriculum_online.png`,
