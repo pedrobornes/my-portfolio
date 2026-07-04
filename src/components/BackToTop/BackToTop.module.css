@@ -1,0 +1,33 @@
+.backToTop {
+  position: fixed;
+  bottom: var(--back-to-top-bottom);
+  right: var(--back-to-top-right);
+  z-index: var(--z-back-to-top);
+  background-color: var(--card-bg);
+  color: var(--accent-color);
+  border: var(--border-width) solid var(--border-color);
+  width: var(--back-to-top-size);
+  height: var(--back-to-top-size);
+  border-radius: var(--radius-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--back-to-top-icon-size);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-back-to-top);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-back-to-top);
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backToTop:hover {
+  border-color: var(--accent-color);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-back-to-top-hover);
+}

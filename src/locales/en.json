@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Pedro Bornes | Portfolio",
+    "description": "Portfolio and résumé of Pedro Bornes - Web Developer."
+  },
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "profile": "Profile",
+    "experience": "Experience",
+    "techStack": "Tech Stack",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "firstName": "Pedro",
+    "lastName": "Bornes",
+    "badge": "Higher Technician in Web Application Development",
+    "description": "Full Stack Developer trained in designing and building modern web applications. Skilled at integrating <bold>backend</bold> logic with dynamic <bold>frontend</bold> interfaces, with a strong ability to adapt to different environments, team methodologies, and new technologies.",
+    "btnExperience": "View Experience",
+    "btnContact": "Contact Me",
+    "profileName": "Pedro Bornes",
+    "profileRole": "Full Stack Developer",
+    "statusBadge": "Available for new challenges",
+    "profileAlt": "Photo of Pedro Bornes"
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional and technical background.",
+    "lfk": {
+      "year": "2025 - 2026",
+      "company": "LFK Global Technology Services",
+      "role": "Software Developer (FCT Internship) • Los Palacios y Villafranca (Seville), Spain",
+      "description": "Full Stack development on a large-scale enterprise application. On the backend, <bold>creating new endpoints for REST APIs</bold> with <bold>Java (Spring Boot)</bold> and designing, creating, and modifying tables in a <bold>complex relational database</bold> using <bold>SQL</bold>. On the frontend, developing modular interfaces with <bold>Angular</bold>. Used <bold>Azure Storage</bold> for cloud file management and Git version control with <bold>Sourcetree</bold> during a 3-month internship (FCT)."
+    },
+    "dbc": {
+      "year": "2023 - 2025",
+      "company": "DBC Informática",
+      "role": "IT Support Technician • Las Cabezas de San Juan (Seville), Spain",
+      "description": "Comprehensive technical support and incident resolution across systems. Diagnosis and maintenance of <bold>hardware</bold>, networks, and peripherals, operating system optimization through installation and configuration from scratch, and advanced component-level repair of mobile devices."
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Featured applications and developments.",
+    "viewCode": "View Code",
+    "viewWeb": "View Website",
+    "readingVault": {
+      "title": "Reading Vault",
+      "description": "Full Stack digital platform for reading management. An end-to-end development built from scratch, <bold>co-designed in Figma</bold> and built on a modular architecture. Features a <bold>Java (Spring Boot) backend</bold> panel with a <bold>local REST API</bold> and its own <bold>MySQL</bold> database, combined with a dynamic <bold>React and TypeScript</bold> frontend that consumes external services.",
+      "teamNote": "<bold>Final team project for DAW</bold> in collaboration with: <link>Angeles de la Rosa</link>"
+    },
+    "proyectoCine": {
+      "title": "Proyecto Cine",
+      "description": "Interactive Full Stack web application developed for the DAW vocational program. Implements a real-time movie search and filtering system through <bold>external REST API consumption</bold> and a solid admin panel built with <bold>Laravel (PHP)</bold> and <bold>Angular</bold> on <bold>MySQL</bold> databases and <bold>Elasticsearch</bold> indexed storage.",
+      "teamNote": "<bold>Individual development</bold> for the DAW vocational program."
+    }
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "subtitle": "Technologies, tools, and continuous learning.",
+    "categories": {
+      "frontend": { "title": "Frontend" },
+      "backend": { "title": "Backend & Databases" },
+      "workflow": { "title": "Workflow & Cloud" }
+    },
+    "education": {
+      "title": "Education",
+      "degree": "Higher Technician in Web Application Development (DAW)",
+      "school": "IES Ruiz Gijón - Utrera (Seville), Spain"
+    },
+    "languages": {
+      "title": "Languages",
+      "spanish": { "name": "Spanish", "level": "NATIVE" },
+      "english": { "name": "English", "level": "Intermediate" }
+    }
+  },
+  "certificates": {
+    "title": "Certifications",
+    "subtitle": "Continuous training and official technical specialization credentials.",
+    "modalAlt": "Certificate",
+    "viewButton": "👁️ View",
+    "softSkills": {
+      "title": "Soft Skills",
+      "intro": "Writing clean, functional code is key, but solving complex problems also requires empathy with the team, knowing how to give and receive feedback, and managing time well to move forward with steady progress.",
+      "fullCertButton": "📜 View Full Certificate (22 hours)",
+      "categories": {
+        "communication": {
+          "title": "Communication",
+          "hours": "4 hours",
+          "modules": {
+            "habilidadesComunicativas": "Communication skills in the workplace",
+            "comunicacionEquipo": "Effective communication in the work team"
+          }
+        },
+        "feedback": {
+          "title": "Quality Feedback",
+          "hours": "9 hours",
+          "modules": {
+            "criticaVsFeedback": "Constructive criticism vs Feedback",
+            "competenciasFacilitadoras": "Facilitating competencies in feedback",
+            "beneficiosFeedback": "Adaptation and optimization of feedback"
+          }
+        },
+        "team": {
+          "title": "Management and Teamwork",
+          "hours": "3 hours",
+          "modules": {
+            "tipsEquipos": "Optimization and management of high-performance teams",
+            "gestionTiempo": "Time management and productivity",
+            "priorizacionTareas": "Task prioritization and operational efficiency"
+          }
+        },
+        "productivity": {
+          "title": "Productivity and Psychology",
+          "hours": "6 hours",
+          "modules": {
+            "neurociencia": "Neuroscience applied to productivity",
+            "asertividad": "Assertiveness and goal achievement",
+            "automotivacionResiliencia": "Self-motivation and professional resilience"
+          }
+        }
+      }
+    },
+    "ia": {
+      "title": "Artificial Intelligence",
+      "intro": "Specialization in integrating language models, agent development, and optimizing software engineering workflows using advanced AI tools.",
+      "fullCertButton": "📜 View Full Certificate (91 hours)",
+      "categories": {
+        "developers": {
+          "title": "AI for Developers",
+          "hours": "91 hours",
+          "modules": {
+            "fundamentos": "Fundamentals of Artificial Intelligence for Software Engineering",
+            "asistentesCodigo": "Workflow Optimization and Code Assistants",
+            "promptEngineering": "Advanced Prompt Engineering for Developers",
+            "integracionApis": "Effective API Integration in Generative AI Ecosystems",
+            "agentes": "Architecture and Development of Generative AI Agents",
+            "fullstack": "Full Stack Application Development with Integrated AI"
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Would you like to get in touch or discuss an opportunity?",
+    "email": {
+      "label": "EMAIL",
+      "value": "pedro.bornesduran@gmail.com"
+    },
+    "linkedin": {
+      "label": "LINKEDIN",
+      "value": "pedro-bornes"
+    }
+  },
+  "common": {
+    "backToTop": "Back to top",
+    "languageSwitcher": "Language selector",
+    "switchToSpanish": "Switch to Spanish",
+    "switchToEnglish": "Switch to English"
+  }
+}

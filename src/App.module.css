@@ -1,0 +1,11 @@
+.main {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
+  padding-left: var(--main-padding-x);
+  padding-right: var(--main-padding-x);
+  max-width: var(--max-width-page);
+  margin: 0 auto;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+}

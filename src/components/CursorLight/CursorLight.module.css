@@ -1,0 +1,12 @@
+.cursorLight {
+  position: fixed;
+  width: var(--cursor-light-size);
+  height: var(--cursor-light-size);
+  background: var(--gradient-cursor-light);
+  border-radius: var(--radius-circle);
+  z-index: var(--z-cursor-light);
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,150 @@
+.sectionLight {
+  padding: var(--spacing-section) var(--main-padding-x);
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: var(--max-width-container);
+  margin: 0 auto;
+}
+
+.sectionTitleCenter {
+  text-align: center;
+  margin-bottom: var(--section-title-center-margin);
+}
+
+.sectionTitleCenter h2 {
+  font-size: var(--text-6xl);
+  font-weight: var(--font-weight-extrabold);
+}
+
+.sectionTitleCenter p {
+  color: var(--text-muted);
+}
+
+.projectsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+
+.projectCard {
+  background-color: var(--card-bg);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-project);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-project-card);
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--text-3xl);
+  color: var(--text-main);
+}
+
+.projectCard p {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.projectTeamNote {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.projectTechTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-base) 0;
+}
+
+.techTag {
+  background-color: var(--color-slate-800);
+  color: var(--color-slate-200);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  border: var(--border-width) solid var(--border-color);
+  display: inline-block;
+}
+
+.projectLinks {
+  margin-top: auto;
+  padding-top: var(--spacing-base);
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.btnProjectLink {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  padding: var(--spacing-sm) var(--spacing-base);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  transition: opacity var(--transition-fast), background-color var(--transition-base);
+  cursor: pointer;
+}
+
+.btnProjectLink:hover {
+  opacity: 0.9;
+  background-color: var(--color-accent-hover);
+}
+
+.teamLink {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: opacity var(--transition-fast);
+}
+
+.teamLink:hover {
+  opacity: 0.9;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .projectsGrid {
+    padding: 0 var(--spacing-base);
+  }
+
+  .projectCard {
+    width: 100%;
+    box-shadow: var(--shadow-project-card-mobile);
+    padding: var(--spacing-xl);
+  }
+
+  .btnProjectLink {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: var(--spacing-md) var(--spacing-base);
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 768px) {
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(var(--projects-grid-min-col), 1fr)
+    );
+    gap: var(--gap-xl);
+  }
+
+  .projectCard {
+    padding: var(--spacing-2xl);
+  }
+
+  .btnProjectLink {
+    width: auto;
+    display: inline-block;
+  }
+}

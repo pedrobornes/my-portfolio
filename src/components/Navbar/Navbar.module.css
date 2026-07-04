@@ -1,0 +1,130 @@
+.navbar {
+  position: fixed;
+  top: var(--navbar-top);
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--navbar-width);
+  max-width: var(--max-width-navbar);
+  z-index: var(--z-navbar);
+  background-color: var(--surface-card-alpha-75);
+  backdrop-filter: blur(var(--blur-navbar));
+  -webkit-backdrop-filter: blur(var(--blur-navbar));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--navbar-padding-y) var(--navbar-padding-x);
+  border: var(--border-width) solid var(--surface-border-nav);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-navbar);
+  transition: var(--transition-navbar);
+}
+
+.navbarHidden {
+  top: var(--navbar-hidden-top);
+  opacity: 0;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--navbar-gap);
+  width: 100%;
+}
+
+.navbar nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: clamp(0.8125rem, 2.4vw, 1rem);
+  transition: color var(--transition-base);
+}
+
+.navbar nav a:hover {
+  color: var(--accent-color);
+}
+
+.langControl {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding-left: calc(var(--navbar-gap) * 0.65);
+  margin-left: calc(var(--navbar-gap) * 0.15);
+  border-left: var(--border-width) solid var(--surface-border-nav);
+}
+
+.langButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  margin: 0;
+  border: var(--border-width) solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  transition:
+    border-color var(--transition-base),
+    box-shadow var(--transition-base),
+    transform var(--transition-fast);
+}
+
+.langButton:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 8px var(--accent-alpha-20);
+  transform: translateY(-1px);
+}
+
+.langButton:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+.langButton:active {
+  transform: translateY(0);
+}
+
+.flag {
+  width: 1.4rem;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--surface-border-nav);
+  animation: flagSwap 0.25s ease;
+}
+
+@keyframes flagSwap {
+  from {
+    opacity: 0.4;
+    transform: scale(0.88);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: calc(100% - 1.25rem);
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar nav {
+    gap: clamp(0.45rem, 2vw, 0.75rem);
+  }
+
+  .langControl {
+    padding-left: 0.5rem;
+    margin-left: 0.15rem;
+  }
+
+  .langButton {
+    padding: 0.2rem;
+  }
+
+  .flag {
+    width: 1.25rem;
+  }
+}

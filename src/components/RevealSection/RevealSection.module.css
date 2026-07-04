@@ -1,0 +1,11 @@
+.revealSection {
+  opacity: 0;
+  transform: translateY(var(--reveal-translate-y));
+  transition: var(--transition-reveal);
+  will-change: opacity, transform;
+}
+
+.isVisible {
+  opacity: 1;
+  transform: translateY(0);
+}

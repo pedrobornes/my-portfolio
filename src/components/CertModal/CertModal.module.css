@@ -1,0 +1,22 @@
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: var(--z-modal);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--surface-bg-alpha-95);
+  backdrop-filter: blur(var(--blur-modal));
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  max-width: var(--modal-content-max-width);
+  max-height: var(--modal-content-max-height);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-modal-content);
+  border: var(--border-width) solid var(--border-color);
+  animation: var(--animation-zoom-in);
+}

@@ -30,6 +30,6 @@ Git, GitHub, Postman
 
 ## Enlaces de Contacto
 
-Puedes ver la web funcionando aquí: [Portafolio](https://pedrobornes.github.io/portfolio/)
+Puedes ver la web funcionando aquí: [Portafolio](https://pedrobornes.github.io/my-portfolio/)
 
-Puedes conectar conmigo en [LinkedIn](https://www.linkedin.com/in/pedro-bornes-b5b630413/)
+Puedes conectar conmigo en [LinkedIn](https://www.linkedin.com/in/pedro-bornes/)

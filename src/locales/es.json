@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": "Pedro Bornes | Portafolio",
+    "description": "Portafolio y currículum de Pedro Bornes - Desarrollador Web."
+  },
+  "nav": {
+    "ariaLabel": "Navegación principal",
+    "profile": "Perfil",
+    "experience": "Experiencia",
+    "techStack": "Tech Stack",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "firstName": "Pedro",
+    "lastName": "Bornes",
+    "badge": "Técnico Superior en Desarrollo de Aplicaciones Web",
+    "description": "Desarrollador Full Stack formado en el diseño y creación de aplicaciones web modernas. Capacitado para integrar la lógica del <bold>backend</bold> con interfaces dinámicas en el <bold>frontend</bold>, con gran capacidad de adaptación a diferentes entornos, metodologías de equipo y nuevas tecnologías.",
+    "btnExperience": "Ver Experiencia",
+    "btnContact": "Contáctame",
+    "profileName": "Pedro Bornes",
+    "profileRole": "Desarrollador Full Stack",
+    "statusBadge": "Disponible para nuevos retos",
+    "profileAlt": "Foto de Pedro Bornes"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Trayectoria profesional y técnica.",
+    "lfk": {
+      "year": "2025 - 2026",
+      "company": "LFK Global Technology Services",
+      "role": "Desarrollador de Software (Prácticas FCT) • Los Palacios y Villafranca (Sevilla), España",
+      "description": "Desarrollo Full Stack en una aplicación empresarial de gran envergadura. En el backend, <bold>creación de nuevos endpoints para APIs REST</bold> con <bold>Java (Spring Boot)</bold> y diseño, creación y modificación de tablas en una <bold>BBDD relacional compleja</bold> mediante <bold>SQL</bold>. En el frontend, desarrollo de interfaces modulares con <bold>Angular</bold>. Uso de <bold>Azure Storage</bold> para la gestión de archivos en la nube y control de versiones Git con <bold>Sourcetree</bold> durante un periodo de prácticas de 3 meses (FCT)."
+    },
+    "dbc": {
+      "year": "2023 - 2025",
+      "company": "DBC Informática",
+      "role": "Técnico de Soporte e Informática • Las Cabezas de San Juan (Sevilla), España",
+      "description": "Soporte técnico integral y resolución de incidencias en sistemas. Diagnóstico y mantenimiento de <bold>hardware</bold>, redes y periféricos, optimización de sistemas operativos mediante instalación y configuración desde cero, y reparación técnica avanzada de dispositivos móviles a nivel de componentes."
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Aplicaciones y desarrollos destacados.",
+    "viewCode": "Ver Código",
+    "viewWeb": "Ver Web",
+    "readingVault": {
+      "title": "Reading Vault",
+      "description": "Plataforma digital Full Stack para la gestión de lecturas. Un desarrollo integral realizado desde cero, <bold>co-diseñado en Figma</bold> y construido bajo una arquitectura modular. Cuenta con un panel <bold>backend en Java (Spring Boot)</bold> con una <bold>API REST local</bold> y base de datos <bold>MySQL</bold> propia, combinados con un frontend dinámico en <bold>React y TypeScript</bold> que consume servicios externos.",
+      "teamNote": "<bold>Proyecto final en equipo para DAW</bold> en colaboración con: <link>Angeles de la Rosa</link>"
+    },
+    "proyectoCine": {
+      "title": "Proyecto Cine",
+      "description": "Aplicación web Full Stack interactiva desarrollada para el ciclo formativo de DAW. Implementa un sistema de búsqueda y filtrado de películas en tiempo real mediante el <bold>consumo de APIs REST externas</bold> y un panel de administración sólido desarrollado con <bold>Laravel (PHP)</bold> y <bold>Angular</bold> sobre bases de datos <bold>MySQL</bold> y almacenamiento indexado con <bold>Elasticsearch</bold>.",
+      "teamNote": "<bold>Desarrollo individual</bold> para el ciclo formativo de DAW."
+    }
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "subtitle": "Tecnologías, herramientas y formación continua.",
+    "categories": {
+      "frontend": { "title": "Frontend" },
+      "backend": { "title": "Backend & Databases" },
+      "workflow": { "title": "Workflow & Cloud" }
+    },
+    "education": {
+      "title": "Educación",
+      "degree": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
+      "school": "IES Ruiz Gijón - Utrera (Sevilla), España"
+    },
+    "languages": {
+      "title": "Idiomas",
+      "spanish": { "name": "Español", "level": "NATIVO" },
+      "english": { "name": "Inglés", "level": "Intermedio" }
+    }
+  },
+  "certificates": {
+    "title": "Certificaciones",
+    "subtitle": "Formación continua y acreditaciones oficiales de especialización técnica.",
+    "modalAlt": "Certificado",
+    "viewButton": "👁️ Ver",
+    "softSkills": {
+      "title": "Soft Skills",
+      "intro": "Escribir código limpio y funcional es clave, pero solucionar problemas complejos también exige empatía con el equipo, saber dar y recibir feedback, y gestionar bien el tiempo para avanzar con paso firme.",
+      "fullCertButton": "📜 Ver Certificado Completo (22 horas)",
+      "categories": {
+        "communication": {
+          "title": "Comunicación",
+          "hours": "4 horas",
+          "modules": {
+            "habilidadesComunicativas": "Habilidades comunicativas en el ámbito laboral",
+            "comunicacionEquipo": "Comunicación efectiva en el equipo de trabajo"
+          }
+        },
+        "feedback": {
+          "title": "Feedback de Calidad",
+          "hours": "9 horas",
+          "modules": {
+            "criticaVsFeedback": "Crítica constructiva vs Feedback",
+            "competenciasFacilitadoras": "Competencias facilitadoras en la retroalimentación",
+            "beneficiosFeedback": "Adaptación y optimización del feedback"
+          }
+        },
+        "team": {
+          "title": "Gestión y Trabajo en Equipo",
+          "hours": "3 horas",
+          "modules": {
+            "tipsEquipos": "Optimización y gestión de equipos de alto rendimiento",
+            "gestionTiempo": "Gestión del tiempo y productividad",
+            "priorizacionTareas": "Priorización de tareas y eficiencia operativa"
+          }
+        },
+        "productivity": {
+          "title": "Productividad y Psicología",
+          "hours": "6 horas",
+          "modules": {
+            "neurociencia": "Neurociencia aplicada a la productividad",
+            "asertividad": "Asertividad y consecución de objetivos",
+            "automotivacionResiliencia": "Automotivación y resiliencia profesional"
+          }
+        }
+      }
+    },
+    "ia": {
+      "title": "Inteligencia Artificial",
+      "intro": "Especialización en la integración de modelos de lenguaje, desarrollo de agentes y optimización de flujos de trabajo de ingeniería de software utilizando herramientas avanzadas de IA.",
+      "fullCertButton": "📜 Ver Certificado Completo (91 horas)",
+      "categories": {
+        "developers": {
+          "title": "IA para Desarrolladores",
+          "hours": "91 horas",
+          "modules": {
+            "fundamentos": "Fundamentos de Inteligencia Artificial para Ingeniería de Software",
+            "asistentesCodigo": "Optimización del Flujo de Trabajo y Asistentes de Código",
+            "promptEngineering": "Prompt Engineering Avanzado para Desarrolladores",
+            "integracionApis": "Integración Eficaz de APIs en Ecosistemas de IA Generativa",
+            "agentes": "Arquitectura y Desarrollo de Agentes de IA Generativa",
+            "fullstack": "Desarrollo de Aplicaciones Full Stack con IA Integrada"
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "¿Quieres contactar conmigo o hablar de una oportunidad?",
+    "email": {
+      "label": "EMAIL",
+      "value": "pedro.bornesduran@gmail.com"
+    },
+    "linkedin": {
+      "label": "LINKEDIN",
+      "value": "pedro-bornes"
+    }
+  },
+  "common": {
+    "backToTop": "Volver arriba",
+    "languageSwitcher": "Selector de idioma",
+    "switchToSpanish": "Cambiar a español",
+    "switchToEnglish": "Cambiar a inglés"
+  }
+}

@@ -1,0 +1,73 @@
+.contactSection {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: var(--spacing-section) var(--main-padding-x);
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: var(--text-7xl);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--letter-spacing-snug);
+  color: var(--text-main);
+  margin-bottom: var(--spacing-base);
+  text-align: center;
+}
+
+.contactSection > p {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.contactCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-lg);
+  max-width: var(--max-width-contact);
+  margin: var(--spacing-4xl) auto 0 auto;
+  padding: 0 var(--spacing-base);
+}
+
+.contactCard {
+  background-color: var(--card-bg);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-3xl) var(--spacing-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-base);
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition-card);
+}
+
+.contactCard:hover {
+  border-color: var(--accent-alpha-50);
+  transform: translateY(-3px);
+}
+
+.cardIcon {
+  font-size: var(--contact-icon-size);
+  color: var(--accent-color);
+}
+
+.cardLabel {
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-wider);
+  color: var(--text-muted);
+}
+
+.cardValue {
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-medium);
+  word-break: break-all;
+  color: var(--text-main);
+}
+
+@media (min-width: 768px) {
+  .contactCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

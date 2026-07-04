@@ -1,0 +1,200 @@
+.heroContainer {
+  padding-top: var(--spacing-base);
+  padding-bottom: var(--spacing-base);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap-2xl);
+  min-height: auto;
+}
+
+.heroText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.greeting {
+  font-size: var(--hero-greeting-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-muted);
+}
+
+.heroText h1 {
+  font-size: var(--hero-title-size);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: var(--letter-spacing-tight);
+  line-height: var(--line-height-tight);
+}
+
+.heroText h1 span {
+  color: var(--color-slate-200);
+}
+
+.badge {
+  color: var(--accent-color);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+  border: var(--border-width) solid var(--accent-alpha-20);
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  align-self: flex-start;
+}
+
+.description {
+  font-size: var(--text-xl);
+  color: var(--color-slate-300);
+  max-width: var(--max-width-content);
+}
+
+.heroButtons {
+  display: flex;
+  gap: var(--spacing-base);
+  margin-top: var(--spacing-sm);
+}
+
+.btnPrimary,
+.btnSecondary {
+  text-decoration: none;
+  font-weight: var(--font-weight-bold);
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
+}
+
+.btnPrimary {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  box-shadow: var(--shadow-btn-primary);
+}
+
+.btnPrimary:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.btnSecondary {
+  border: var(--border-width) solid var(--border-color);
+  background-color: var(--surface-card-alpha-50);
+  color: var(--text-main);
+  font-weight: var(--font-weight-semibold);
+}
+
+.btnSecondary:hover {
+  border-color: var(--color-slate-600);
+}
+
+.profileCard {
+  width: 100%;
+  max-width: var(--max-width-profile-card);
+  background: var(--gradient-profile-card);
+  border: var(--border-width) solid var(--color-slate-800);
+  border-radius: var(--radius-2xl);
+  padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: var(--profile-card-min-height);
+  box-shadow: var(--shadow-profile-card);
+  position: relative;
+  overflow: hidden;
+  gap: var(--spacing-lg);
+}
+
+.profileImgRect {
+  width: 100%;
+  height: var(--profile-img-height);
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius-xl);
+  border: var(--border-width) solid var(--border-color);
+  box-shadow: var(--shadow-profile-img);
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: var(--spacing-xs);
+}
+
+.profileCard h3 {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-main);
+  letter-spacing: var(--letter-spacing-snug);
+}
+
+.profileRole {
+  color: var(--text-muted);
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-lg);
+}
+
+.statusBadge {
+  position: absolute;
+  bottom: var(--status-badge-bottom);
+  background-color: var(--surface-bg-alpha-80);
+  border: var(--border-width) solid var(--color-slate-800);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  box-shadow: var(--shadow-status-inset);
+  backdrop-filter: blur(var(--blur-status-badge));
+}
+
+.pulseRing {
+  position: relative;
+  display: flex;
+  height: var(--pulse-ring-size);
+  width: var(--pulse-ring-size);
+}
+
+.pulseRing::before,
+.pulseRing::after {
+  content: '';
+  position: absolute;
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-color);
+  opacity: 0.75;
+  animation: var(--animation-ping);
+}
+
+.pulseRing::after {
+  animation-delay: var(--animation-ping-delay);
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column-reverse;
+    gap: var(--gap-xl);
+    padding-top: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+  }
+}
+
+@media (min-width: 768px) {
+  .heroContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-2xl);
+  }
+
+  .profileCard {
+    width: var(--max-width-profile-card);
+  }
+}

@@ -1,0 +1,340 @@
+/* ==========================================================================
+   DESIGN TOKENS — Portfolio Pedro Bornes
+   Extraídos de css/style.css (diseño original)
+   ========================================================================== */
+
+:root {
+  /* --------------------------------------------------------------------------
+     1. COLORES BASE (:root original)
+     -------------------------------------------------------------------------- */
+  --bg-color: #020617;       /* slate-950 */
+  --accent-color: #10b981;   /* Verde esmeralda */
+  --text-main: #f8fafc;      /* slate-50 */
+  --text-muted: #94a3b8;     /* slate-400 */
+  --border-color: #334155;   /* slate-700 */
+  --card-bg: #0f172a;        /* slate-900 */
+
+  /* --------------------------------------------------------------------------
+     2. PALETA EXTENDIDA (valores hardcodeados del CSS original)
+     -------------------------------------------------------------------------- */
+  --color-slate-800: #1e293b;
+  --color-slate-600: #64748b;
+  --color-slate-300: #cbd5e1;
+  --color-slate-200: #e2e8f0;
+  --color-accent-hover: #059669;   /* emerald-600 */
+  --color-black: #000000;
+  --color-transparent: rgba(0, 0, 0, 0);
+
+  /* --------------------------------------------------------------------------
+     3. COLORES CON TRANSPARENCIA — Superficies
+     -------------------------------------------------------------------------- */
+  --surface-card-alpha-30: rgba(15, 23, 42, 0.3);
+  --surface-card-alpha-50: rgba(15, 23, 42, 0.5);
+  --surface-card-alpha-75: rgba(15, 23, 42, 0.75);
+  --surface-bg-alpha-40: rgba(2, 6, 23, 0.4);
+  --surface-bg-alpha-80: rgba(2, 6, 23, 0.8);
+  --surface-bg-alpha-95: rgba(2, 6, 23, 0.95);
+  --surface-slate-alpha-40: rgba(30, 41, 59, 0.4);
+  --surface-slate-alpha-50: rgba(30, 41, 59, 0.5);
+  --surface-border-alpha-50: rgba(51, 65, 85, 0.4);
+  --surface-border-nav: rgba(51, 65, 85, 0.5);
+  --surface-overlay-dark: rgba(0, 0, 0, 0.2);
+
+  /* --------------------------------------------------------------------------
+     4. COLORES CON TRANSPARENCIA — Acento (emerald)
+     -------------------------------------------------------------------------- */
+  --accent-alpha-05: rgba(16, 185, 129, 0.05);
+  --accent-alpha-08: rgba(16, 185, 129, 0.08);
+  --accent-alpha-10: rgba(16, 185, 129, 0.1);
+  --accent-alpha-15: rgba(16, 185, 129, 0.15);
+  --accent-alpha-20: rgba(16, 185, 129, 0.2);
+  --accent-alpha-25: rgba(16, 185, 129, 0.25);
+  --accent-alpha-30: rgba(16, 185, 129, 0.3);
+  --accent-alpha-50: rgba(16, 185, 129, 0.5);
+  --accent-alpha-60: rgba(16, 185, 129, 0.6);
+  --accent-alpha-75: rgba(16, 185, 129, 0.75);
+
+  /* --------------------------------------------------------------------------
+     5. COLORES CON TRANSPARENCIA — Sombras
+     -------------------------------------------------------------------------- */
+  --shadow-black-03: rgba(0, 0, 0, 0.03);
+  --shadow-black-05: rgba(0, 0, 0, 0.05);
+  --shadow-black-30: rgba(0, 0, 0, 0.3);
+  --shadow-black-40: rgba(0, 0, 0, 0.4);
+  --shadow-black-50: rgba(0, 0, 0, 0.5);
+  --shadow-bg-50: rgba(2, 6, 23, 0.5);
+  --shadow-bg-80: rgba(2, 6, 23, 0.8);
+
+  /* --------------------------------------------------------------------------
+     6. GRADIENTES
+     -------------------------------------------------------------------------- */
+  --gradient-cursor-light: radial-gradient(
+    circle,
+    var(--accent-alpha-05) 0%,
+    var(--color-transparent) 70%
+  );
+  --gradient-profile-card: linear-gradient(
+    to bottom,
+    var(--card-bg),
+    var(--surface-card-alpha-50)
+  );
+
+  /* --------------------------------------------------------------------------
+     7. TIPOGRAFÍA
+     -------------------------------------------------------------------------- */
+  --font-family: 'Inter', sans-serif;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-base: 1.5;
+  --line-height-tight: 1;
+  --line-height-relaxed: 1.6;
+
+  --letter-spacing-tight: -0.05em;
+  --letter-spacing-snug: -0.025em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+
+  /* Tamaños de fuente */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 0.9375rem;
+  --text-md: 1rem;
+  --text-lg: 1.05rem;
+  --text-xl: 1.125rem;
+  --text-2xl: 1.25rem;
+  --text-3xl: 1.5rem;
+  --text-4xl: 1.75rem;
+  --text-5xl: 1.875rem;
+  --text-6xl: 2.25rem;
+  --text-7xl: 2.5rem;
+  --text-8xl: 3rem;
+
+  /* Hero — responsive (mobile first) */
+  --hero-greeting-size: 1.875rem;
+  --hero-title-size: 3rem;
+
+  /* --------------------------------------------------------------------------
+     8. ESPACIADO
+     -------------------------------------------------------------------------- */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-base: 1rem;
+  --spacing-lg: 1.25rem;
+  --spacing-xl: 1.5rem;
+  --spacing-2xl: 2rem;
+  --spacing-3xl: 2.5rem;
+  --spacing-4xl: 3rem;
+  --spacing-5xl: 4rem;
+  --spacing-section: 6rem;
+
+  --gap-xs: 0.25rem;
+  --gap-sm: 0.5rem;
+  --gap-md: 0.75rem;
+  --gap-base: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 2rem;
+  --gap-2xl: 3rem;
+
+  /* --------------------------------------------------------------------------
+     9. LAYOUT Y CONTENEDORES
+     -------------------------------------------------------------------------- */
+  --max-width-page: 72rem;
+  --max-width-container: 56rem;
+  --max-width-content: 36rem;
+  --max-width-navbar: 580px;
+  --max-width-profile-card: 420px;
+  --max-width-certificates: 800px;
+  --max-width-certificates-intro: 650px;
+  --max-width-contact: 48rem;
+  --navbar-width: 90%;
+
+  /* Breakpoints de referencia (solo documentación; no válidos en @media) */
+  --breakpoint-md: 768px;
+
+  /* --------------------------------------------------------------------------
+     10. BORDES Y RADIOS
+     -------------------------------------------------------------------------- */
+  --border-width: 1px;
+  --border-width-thick: 2px;
+  --border-width-accent: 4px;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-pill: 100px;
+  --radius-full: 9999px;
+  --radius-circle: 50%;
+  --radius-project: 8px;
+
+  /* --------------------------------------------------------------------------
+     11. SOMBRAS (box-shadow compuestas)
+     -------------------------------------------------------------------------- */
+  --shadow-navbar: 0 10px 30px var(--shadow-black-40);
+  --shadow-btn-primary: 0 10px 15px -3px var(--accent-alpha-10);
+  --shadow-profile-img: 0 10px 15px -3px var(--shadow-black-30);
+  --shadow-profile-card: 0 25px 50px -12px var(--shadow-black-50);
+  --shadow-status-inset: inset 0 2px 4px var(--shadow-black-40);
+  --shadow-timeline-dot: 0 0 0 4px var(--bg-color);
+  --shadow-project-card: 0 4px 6px -1px var(--shadow-black-05),
+    0 2px 4px -1px var(--shadow-black-03);
+  --shadow-project-card-mobile: 0 4px 6px var(--shadow-black-30);
+  --shadow-cert-card-hover: 0 10px 20px var(--shadow-black-30),
+    0 0 10px var(--accent-alpha-15);
+  --shadow-certificates-group: 0 10px 25px -5px var(--shadow-black-50),
+    0 0 15px var(--accent-alpha-25);
+  --shadow-accordion-open: 0 0 15px var(--accent-alpha-05);
+  --shadow-modal-content: 0 0 30px var(--accent-alpha-15);
+  --shadow-back-to-top: 0 4px 15px var(--shadow-bg-50),
+    0 0 10px var(--accent-alpha-30);
+  --shadow-back-to-top-hover: 0 10px 25px var(--shadow-bg-80),
+    0 0 15px var(--accent-alpha-60);
+
+  /* --------------------------------------------------------------------------
+     12. Z-INDEX
+     -------------------------------------------------------------------------- */
+  --z-cursor-light: -1;
+  --z-timeline-dot: 1;
+  --z-back-to-top: 99;
+  --z-navbar: 1000;
+  --z-modal: 2000;
+
+  /* --------------------------------------------------------------------------
+     13. TRANSICIONES Y ANIMACIONES
+     -------------------------------------------------------------------------- */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-smooth: 0.3s ease-in-out;
+  --transition-navbar: transform 0.3s ease-in-out, top 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+  --transition-card: border-color 0.3s ease, transform 0.2s ease;
+  --transition-back-to-top: opacity 0.3s ease, visibility 0.3s ease,
+    transform 0.2s ease, box-shadow 0.3s ease;
+  --transition-reveal: opacity 0.85s cubic-bezier(0.25, 1, 0.5, 1),
+    transform 0.85s cubic-bezier(0.25, 1, 0.5, 1);
+
+  --animation-ping: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animation-ping-delay: 0.5s;
+  --animation-zoom-in: zoomIn 0.3s ease;
+
+  /* --------------------------------------------------------------------------
+     14. BACKDROP FILTER
+     -------------------------------------------------------------------------- */
+  --blur-navbar: 12px;
+  --blur-status-badge: 4px;
+  --blur-modal: 8px;
+
+  /* --------------------------------------------------------------------------
+     15. COMPONENTES ESPECÍFICOS
+     -------------------------------------------------------------------------- */
+
+  /* Cursor light */
+  --cursor-light-size: 500px;
+
+  /* Navbar */
+  --navbar-top: 1.5rem;
+  --navbar-hidden-top: -80px;
+  --navbar-padding-y: 0.85rem;
+  --navbar-padding-x: 1.5rem;
+  --navbar-gap: clamp(0.75rem, 3vw, 2rem);
+
+  /* Hero / Main */
+  --main-padding-top: 6rem;
+  --main-padding-bottom: 3rem;
+  --main-padding-x: 1.5rem;
+
+  /* Profile card */
+  --profile-card-min-height: 540px;
+  --profile-img-height: 340px;
+  --status-badge-bottom: 2rem;
+
+  /* Pulse ring */
+  --pulse-ring-size: 0.75rem;
+
+  /* Timeline */
+  --timeline-line-width: 2px;
+  --timeline-line-left-mobile: 7.5rem;
+  --timeline-line-left-desktop: 8.5rem;
+  --timeline-dot-size: 12px;
+  --timeline-dot-left-mobile: 7rem;
+  --timeline-dot-left-desktop: 8rem;
+  --timeline-year-width-mobile: 6rem;
+  --timeline-year-width-desktop: 7rem;
+  --timeline-card-offset-mobile: 2rem;
+  --timeline-card-offset-desktop: 2.5rem;
+
+  /* Section titles */
+  --section-title-margin: 4rem;
+  --section-title-center-margin: 3rem;
+
+  /* Accordion */
+  --accordion-underline-width: 40px;
+  --accordion-underline-height: 3px;
+
+  /* Modal */
+  --modal-content-max-width: 90%;
+  --modal-content-max-height: 85%;
+
+  /* Back to top */
+  --back-to-top-size: 3rem;
+  --back-to-top-bottom: 2rem;
+  --back-to-top-right: 2rem;
+  --back-to-top-icon-size: 1.5rem;
+
+  /* Close modal */
+  --close-modal-top: 1.5rem;
+  --close-modal-right: 2rem;
+  --close-modal-size: 3rem;
+
+  /* Reveal scroll */
+  --reveal-translate-y: 40px;
+
+  /* Cert icon */
+  --cert-icon-size: 2.25rem;
+
+  /* Contact card icon */
+  --contact-icon-size: 2rem;
+
+  /* Projects grid */
+  --projects-grid-min-col: 350px;
+  --certificates-grid-min-col: 280px;
+}
+
+/* --------------------------------------------------------------------------
+   TIPOGRAFÍA RESPONSIVE (desktop ≥ 768px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  :root {
+    --hero-greeting-size: 2.25rem;
+    --hero-title-size: 4.5rem;
+    --max-width-profile-card: 420px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   KEYFRAMES (animaciones del diseño original)
+   -------------------------------------------------------------------------- */
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
