@@ -19,6 +19,8 @@ const PROJECTS = [
     links: {
       web: 'https://www.status-timer.com',
     },
+    badgeKey: 'projects.badges.production',
+    featured: true,
   },
   {
     id: 'readingVault',
@@ -71,9 +73,17 @@ function Projects() {
         </div>
 
         <div className={styles.projectsGrid}>
-          {PROJECTS.map(({ id, translationKey, techTags, links, teamLink }) => (
-            <article key={id} className={styles.projectCard}>
-              <h3>{t(`${translationKey}.title`)}</h3>
+          {PROJECTS.map(({ id, translationKey, techTags, links, teamLink, badgeKey, featured }) => (
+            <article
+              key={id}
+              className={`${styles.projectCard}${featured ? ` ${styles.projectCardFeatured}` : ''}`}
+            >
+              <div className={styles.projectHeader}>
+                <h3>{t(`${translationKey}.title`)}</h3>
+                {badgeKey && (
+                  <span className={styles.productionBadge}>{t(badgeKey)}</span>
+                )}
+              </div>
               <p>
                 <Trans
                   i18nKey={`${translationKey}.description`}

@@ -44,6 +44,9 @@
     "subtitle": "Aplicaciones y desarrollos destacados.",
     "viewCode": "Ver Código",
     "viewWeb": "Ver Web",
+    "badges": {
+      "production": "En producción"
+    },
     "statusTimer": {
       "title": "StatusTimer",
       "description": "Plataforma de monitoreo en tiempo real que centraliza el estado de servidores, incidencias y lanzamientos de juegos multijugador, evitando consultar múltiples fuentes. Stack Full-Stack con <bold>Next.js y TypeScript</bold> en el frontend, <bold>Java (Spring Boot)</bold> en el backend, y un sistema de ingesta en <bold>Python</bold> que normaliza datos externos y los expone mediante una <bold>API REST</bold> propia.",

@@ -38,10 +38,48 @@
   flex-direction: column;
 }
 
-.projectCard h3 {
+.projectCardFeatured {
+  border-color: var(--accent-alpha-20);
+  box-shadow: var(--shadow-project-card), 0 0 0 1px var(--accent-alpha-20);
+}
+
+.projectHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-sm);
   margin-bottom: var(--spacing-sm);
+}
+
+.projectCard h3 {
+  margin-bottom: 0;
   font-size: var(--text-3xl);
   color: var(--text-main);
+}
+
+.productionBadge {
+  color: var(--accent-color);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wider);
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  border: var(--border-width) solid var(--accent-alpha-20);
+  background-color: var(--accent-alpha-10);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  line-height: 1;
+}
+
+.productionBadge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: var(--accent-color);
+  box-shadow: 0 0 6px var(--accent-color);
 }
 
 .projectCard p {
@@ -141,6 +179,10 @@
 
   .projectCard {
     padding: var(--spacing-2xl);
+  }
+
+  .projectCardFeatured {
+    grid-column: 1 / -1;
   }
 
   .btnProjectLink {

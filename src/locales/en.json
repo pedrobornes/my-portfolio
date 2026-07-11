@@ -44,6 +44,9 @@
     "subtitle": "Featured applications and developments.",
     "viewCode": "View Code",
     "viewWeb": "View Website",
+    "badges": {
+      "production": "In production"
+    },
     "statusTimer": {
       "title": "StatusTimer",
       "description": "Real-time monitoring platform that centralizes server status, incidents, and multiplayer game launches, so users no longer need to check multiple sources. Full-Stack architecture with <bold>Next.js and TypeScript</bold> on the frontend, <bold>Java (Spring Boot)</bold> on the backend, and a <bold>Python</bold> data ingestion system that normalizes external data and exposes it through a custom <bold>REST API</bold>.",
