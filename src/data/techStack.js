@@ -2,7 +2,7 @@ export const TECH_CATEGORIES = [
   {
     id: 'frontend',
     titleKey: 'tech.categories.frontend.title',
-    tags: ['React', 'Angular', 'TypeScript', 'JavaScript', 'HTML5 / CSS3', 'Sass'],
+    tags: ['Next.js', 'React', 'Angular', 'TypeScript', 'JavaScript', 'HTML5 / CSS3', 'Sass'],
   },
   {
     id: 'backend',
@@ -10,7 +10,9 @@ export const TECH_CATEGORIES = [
     tags: [
       'Java',
       'Spring Boot',
+      'Python',
       'API REST',
+      'Harvester',
       'PHP / Laravel',
       'MySQL (SQL)',
       'Elasticsearch',
@@ -19,7 +21,7 @@ export const TECH_CATEGORIES = [
   {
     id: 'workflow',
     titleKey: 'tech.categories.workflow.title',
-    tags: ['Git / GitHub', 'Postman', 'Docker', 'Figma', 'Cloud Storage'],
+    tags: ['Git / GitHub', 'Postman', 'Docker', 'Vercel / Railway', 'Figma', 'Cloud Storage'],
   },
 ]
 
