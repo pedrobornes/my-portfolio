@@ -6,6 +6,21 @@ const bold = <strong />
 
 const PROJECTS = [
   {
+    id: 'statusTimer',
+    translationKey: 'projects.statusTimer',
+    techTags: [
+      'Next.js',
+      'TypeScript',
+      'Java',
+      'Spring Boot',
+      'Python',
+      'API REST',
+    ],
+    links: {
+      web: 'https://www.status-timer.com',
+    },
+  },
+  {
     id: 'readingVault',
     translationKey: 'projects.readingVault',
     techTags: [
@@ -96,14 +111,16 @@ function Projects() {
                 ))}
               </div>
               <div className={styles.projectLinks}>
-                <a
-                  href={links.code}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.btnProjectLink}
-                >
-                  {t('projects.viewCode')}
-                </a>
+                {links.code && (
+                  <a
+                    href={links.code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.btnProjectLink}
+                  >
+                    {t('projects.viewCode')}
+                  </a>
+                )}
                 <a
                   href={links.web}
                   target="_blank"

@@ -44,6 +44,11 @@
     "subtitle": "Featured applications and developments.",
     "viewCode": "View Code",
     "viewWeb": "View Website",
+    "statusTimer": {
+      "title": "StatusTimer",
+      "description": "Real-time monitoring platform that centralizes server status, incidents, and multiplayer game launches, so users no longer need to check multiple sources. Full-Stack architecture with <bold>Next.js and TypeScript</bold> on the frontend, <bold>Java (Spring Boot)</bold> on the backend, and a <bold>Python</bold> data ingestion system that normalizes external data and exposes it through a custom <bold>REST API</bold>.",
+      "teamNote": "<bold>First project deployed to production</bold>. Individual development: harvester design, API contracts, deployment on Vercel and Railway, and ongoing maintenance in a live environment."
+    },
     "readingVault": {
       "title": "Reading Vault",
       "description": "Full Stack digital platform for reading management. An end-to-end development built from scratch, <bold>co-designed in Figma</bold> and built on a modular architecture. Features a <bold>Java (Spring Boot) backend</bold> panel with a <bold>local REST API</bold> and its own <bold>MySQL</bold> database, combined with a dynamic <bold>React and TypeScript</bold> frontend that consumes external services.",
