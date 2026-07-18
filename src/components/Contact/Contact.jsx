@@ -5,7 +5,7 @@ import styles from './Contact.module.css'
 const CONTACT_ITEMS = [
   {
     id: 'email',
-    href: 'mailto:pedro.bornesduran@gmail.com',
+    href: 'mailto:pedro.bornesdev@gmail.com',
     icon: '\u2709\ufe0f',
     labelKey: 'contact.email.label',
     valueKey: 'contact.email.value',
