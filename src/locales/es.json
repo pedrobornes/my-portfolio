@@ -45,12 +45,12 @@
     "viewCode": "Ver Código",
     "viewWeb": "Ver Web",
     "badges": {
-      "production": "En producción"
+      "productionArchived": "Desplegado en producción (Archivado)"
     },
     "statusTimer": {
       "title": "StatusTimer",
-      "description": "Plataforma de monitoreo en tiempo real que centraliza el estado de servidores, incidencias y lanzamientos de juegos multijugador, evitando consultar múltiples fuentes. Stack Full-Stack con <bold>Next.js y TypeScript</bold> en el frontend, <bold>Java (Spring Boot)</bold> en el backend, y un sistema de ingesta en <bold>Python</bold> que normaliza datos externos y los expone mediante una <bold>API REST</bold> propia.",
-      "teamNote": "<bold>Primer proyecto desplegado en producción</bold>. Desarrollo individual: diseño del harvester, contratos de API, despliegue en Vercel y Railway, y mantenimiento continuo en un entorno real."
+      "description": "Plataforma de monitoreo en tiempo real que centraliza el estado de servidores, incidencias y lanzamientos de juegos multijugador en una sola interfaz. Stack Full-Stack construido con <bold>Next.js y TypeScript</bold> en el frontend, <bold>Java (Spring Boot)</bold> en el backend, y un sistema de ingesta en <bold>Python</bold> para normalizar datos externos e integrarlos mediante una <bold>API REST</bold> propia.",
+      "teamNote": "<bold>Desarrollo individual completo</bold>: diseño del harvester, contratos de API y despliegue cloud en Vercel y Railway. Tras completar exitosamente su fase operativa en un entorno real, la infraestructura se ha archivado para optimizar costes de mantenimiento (código fuente y documentación técnica disponibles en GitHub)."
     },
     "readingVault": {
       "title": "Reading Vault",

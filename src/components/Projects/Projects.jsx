@@ -17,9 +17,9 @@ const PROJECTS = [
       'API REST',
     ],
     links: {
-      web: 'https://www.status-timer.com',
+      code: 'https://github.com/pedrobornes/StatusTimer',
     },
-    badgeKey: 'projects.badges.production',
+    badgeKey: 'projects.badges.productionArchived',
     featured: true,
   },
   {
@@ -131,14 +131,16 @@ function Projects() {
                     {t('projects.viewCode')}
                   </a>
                 )}
-                <a
-                  href={links.web}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.btnProjectLink}
-                >
-                  {t('projects.viewWeb')}
-                </a>
+                {links.web && (
+                  <a
+                    href={links.web}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.btnProjectLink}
+                  >
+                    {t('projects.viewWeb')}
+                  </a>
+                )}
               </div>
             </article>
           ))}

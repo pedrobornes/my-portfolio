@@ -45,12 +45,12 @@
     "viewCode": "View Code",
     "viewWeb": "View Website",
     "badges": {
-      "production": "In production"
+      "productionArchived": "Deployed to production (Archived)"
     },
     "statusTimer": {
       "title": "StatusTimer",
-      "description": "Real-time monitoring platform that centralizes server status, incidents, and multiplayer game launches, so users no longer need to check multiple sources. Full-Stack architecture with <bold>Next.js and TypeScript</bold> on the frontend, <bold>Java (Spring Boot)</bold> on the backend, and a <bold>Python</bold> data ingestion system that normalizes external data and exposes it through a custom <bold>REST API</bold>.",
-      "teamNote": "<bold>First project deployed to production</bold>. Individual development: harvester design, API contracts, deployment on Vercel and Railway, and ongoing maintenance in a live environment."
+      "description": "Real-time monitoring platform that centralizes server status, incidents, and multiplayer game launches in a single interface. Full-Stack stack built with <bold>Next.js and TypeScript</bold> on the frontend, <bold>Java (Spring Boot)</bold> on the backend, and a <bold>Python</bold> ingestion system to normalize external data and integrate it through a custom <bold>REST API</bold>.",
+      "teamNote": "<bold>Complete individual development</bold>: harvester design, API contracts, and cloud deployment on Vercel and Railway. After successfully completing its operational phase in a live environment, the infrastructure was archived to optimize maintenance costs (source code and technical documentation available on GitHub)."
     },
     "readingVault": {
       "title": "Reading Vault",
