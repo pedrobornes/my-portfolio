@@ -18,6 +18,14 @@ const CONTACT_ITEMS = [
     valueKey: 'contact.linkedin.value',
     external: true,
   },
+  {
+    id: 'cv',
+    href: import.meta.env.BASE_URL + 'Pedro_Bornes_CV.pdf',
+    icon: '\ud83d\udcc4',
+    labelKey: 'contact.cv.label',
+    valueKey: 'contact.cv.value',
+    external: true,
+  },
 ]
 
 function Contact() {

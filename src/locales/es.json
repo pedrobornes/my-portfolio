@@ -67,9 +67,15 @@
     "title": "Tech Stack",
     "subtitle": "Tecnologías, herramientas y formación continua.",
     "categories": {
-      "frontend": { "title": "Frontend" },
-      "backend": { "title": "Backend & Databases" },
-      "workflow": { "title": "Workflow & Cloud" }
+      "frontend": {
+        "title": "Frontend"
+      },
+      "backend": {
+        "title": "Backend & Databases"
+      },
+      "workflow": {
+        "title": "Workflow & Cloud"
+      }
     },
     "education": {
       "title": "Educación",
@@ -78,8 +84,14 @@
     },
     "languages": {
       "title": "Idiomas",
-      "spanish": { "name": "Español", "level": "NATIVO" },
-      "english": { "name": "Inglés", "level": "Intermedio" }
+      "spanish": {
+        "name": "Español",
+        "level": "NATIVO"
+      },
+      "english": {
+        "name": "Inglés",
+        "level": "Intermedio"
+      }
     }
   },
   "certificates": {
@@ -159,6 +171,10 @@
     "linkedin": {
       "label": "LINKEDIN",
       "value": "pedro-bornes"
+    },
+    "cv": {
+      "label": "Currículum",
+      "value": "Ver CV (PDF)"
     }
   },
   "common": {

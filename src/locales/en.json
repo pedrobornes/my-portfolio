@@ -67,9 +67,15 @@
     "title": "Tech Stack",
     "subtitle": "Technologies, tools, and continuous learning.",
     "categories": {
-      "frontend": { "title": "Frontend" },
-      "backend": { "title": "Backend & Databases" },
-      "workflow": { "title": "Workflow & Cloud" }
+      "frontend": {
+        "title": "Frontend"
+      },
+      "backend": {
+        "title": "Backend & Databases"
+      },
+      "workflow": {
+        "title": "Workflow & Cloud"
+      }
     },
     "education": {
       "title": "Education",
@@ -78,8 +84,14 @@
     },
     "languages": {
       "title": "Languages",
-      "spanish": { "name": "Spanish", "level": "NATIVE" },
-      "english": { "name": "English", "level": "Intermediate" }
+      "spanish": {
+        "name": "Spanish",
+        "level": "NATIVE"
+      },
+      "english": {
+        "name": "English",
+        "level": "Intermediate"
+      }
     }
   },
   "certificates": {
@@ -159,6 +171,10 @@
     "linkedin": {
       "label": "LINKEDIN",
       "value": "pedro-bornes"
+    },
+    "cv": {
+      "label": "Resume",
+      "value": "View CV (PDF)"
     }
   },
   "common": {
